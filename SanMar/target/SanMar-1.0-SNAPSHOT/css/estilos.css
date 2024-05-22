@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    align-content: center;
+    font-family: Arial;
+    list-style: none;
+    box-sizing: border-box;
+    cursor: url("../Imagenes/cursorflecha.png"), auto;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-color: #fff;
+    font-family: sans-serif;
+    background-size: cover;
+    font-family: 'Roboto Serif', serif;
+}
+
+.headerSanMar{
+    position:fixed;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    transition: all 0.7s ease;
+    padding: 30px 20px;
+    z-index:10;
+    color:white;   
+}
+.headerSanMar .logo{
+    position:relative;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.headerSanMar .logo img{
+    width: 15%;
+}
+.headerSanMar.abajo{
+    background: #2D2E32;
+    position:fixed;
+    top: 0rem;  
+    padding: 15px 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    display:flex;
+}
+
+.container_header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    box-shadow: none;
+}
+.headerSanMar .header_ul{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerSanMar .header_ul .header_li {
+    position:relative;
+    margin: 0 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.7s;
+    font-size: 18px;
+}    
+.headerSanMar .header_ul .header_li a{
+    text-decoration: none;
+    color: #fff;
+
+}       
+.headerSanMar .btnInicio div{
+     border: 1px solid white;
+     padding: 1rem;
+}
+
+.headerSanMar.abajo .btnInicio div{
+    border: 1px solid black;
+}
+.headerSanMar .btnInicio div:hover{
+    background: gray;
+    transition: 0.5s;
+
+}
+
+
+
+.zona1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/fondo01.jpg");
+    background-size: cover;
+    background-position:  center center;
+}
+
+.servicios{
+    background-color: #2D2E32; 
+    padding: 2rem;
+}
+
+.headerSanMar.abajo .header_ul .header_li a{
+    color: #FFFFFF;
+}
+
+.headerSanMar.abajo .logo{
+    width: 30%;
+}
+.headerSanMar.abajo nav{
+    width: 70%;
+}
+.headerSanMar.abajo .logo img{
+    width: 20%;
+    box-sizing:border-box;
+    display:block;
+    background: url("../Imagenes/logo02.jpg");
+
+}
+
+
+/* ESTILOS PARA MENU */
+.menu{
+    position: relative;
+    width: 100%;
+    height: 170vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Imagenes/fondo02.jpg");
+    background-size: cover;
+    background-position:  center center;
+}
+.menu h4{
+    position: absolute;
+    width: 100%;
+    top:1.5rem;
+    display: flex;
+    color: white;
+    font-weight: 700;
+    
+    justify-content: center;
+}
+
+.container_menu{
+    position: absolute;
+    top: 7rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collage_menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 50%;
+}
+
+.collage_menu .container_img{
+    width: 15rem;
+    height: 15rem;  position:relative
+}
+.collage_menu .container_img img{
+    width: 100%;
+    height: 100%;  
+    border: 1px solid white; 
+  
+}
+.collage_menu .container_img img:hover{
+    width: 100%;
+    height: 100%;  
+    border: 1px solid white; 
+     filter: brightness(70%);
+}
+
+.collage_menu .container_img .text_overlay {
+    display: none; /* Oculta el texto por defecto */
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto horizontal y verticalmente */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    font-weight: bold; /* Peso de la fuente */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.collage_menu .container_img:hover .text_overlay {
+    display: block; /* Muestra el texto cuando pasas el mouse sobre la imagen */
+}
+
+
+
+
+
+
+/* ESTILOS PARA FOOTER */
+
+.container_footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #2D2E32;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block; 
+    text-transform: uppercase
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBBBB;
+    display: block; 
+    margin-bottom: 15px;
+    transition: all .3s ease;    
+}
+.footer-links ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 6px; 
+}
+
+.social-link a{
+    display: inline-block; 
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #00C3FF;
+}
+
+.footer-links .button-reserva{
+    position:relative;
+    left: 1rem;
+    width: 70%;
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    transition: all .5s ease;
+}
+.footer-links .button-reserva a{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+.footer-links .button-reserva:hover{
+    background-color: #00C3FF;
+}
+@media(max-width:991px){
+    .footer-row{
+        text-align: center;
+    }
+    
+    .footer-links{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

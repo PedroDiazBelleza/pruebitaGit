@@ -1,0 +1,188 @@
+.SeccionEncabezado{
+    position: relative;
+    width: 100%;
+    height: 15vh;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/fondo01.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px; /* Centra el tooltip horizontalmente */
+}
+
+button {
+    width: 61px;
+    height: 61px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+}
+button:hover {
+    background-color: lightgreen;
+    color: black;
+    transition: all .5s ease;
+}
+.rojo {
+    background-color: red;
+    color: white;
+    pointer-events: none;
+}
+.verde {
+    background-color: green;
+
+}
+td {
+    text-align: center;
+}
+.table-container {
+    background-color: rgba(45, 46, 50, 0.7);
+    margin-top: 200px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px; /* Ajusta este valor según tu preferencia */
+}
+.button-container {
+    position: relative;
+    display: inline-block;
+    transition: all .5s ease;
+}
+.button-container:hover .tooltip {
+    visibility: visible;
+}
+.divboton1{
+    position: absolute;
+    top: 265px; /* Distancia desde la parte superior del documento */
+    left: 36px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton2{
+    position: absolute;
+    top: 50px; /* Distancia desde la parte superior del documento */
+    left: 40px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton3{
+    position: absolute;
+    top: 165px; /* Distancia desde la parte superior del documento */
+    left: 145px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton4{
+    position: absolute;
+    top: 285px; /* Distancia desde la parte superior del documento */
+    left: 235px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton5{
+    position: absolute;
+    top:35px; /* Distancia desde la parte superior del documento */
+    left: 205px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton6{
+    position: absolute;
+    top: 370px; /* Distancia desde la parte superior del documento */
+    left: 400px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton7{
+    position: absolute;
+    top: 58px; /* Distancia desde la parte superior del documento */
+    left: 390px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton8{
+    position: absolute;
+    top: 215px; /* Distancia desde la parte superior del documento */
+    left: 475px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton9{
+    position: absolute;
+    top: 355px; /* Distancia desde la parte superior del documento */
+    left: 572px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.divboton10{
+    position: absolute;
+    top: 33px; /* Distancia desde la parte superior del documento */
+    left: 545px; /* Distancia desde el lado izquierdo del documento */
+    z-index: 9; /* Valor alto para asegurar que esté por encima de todo */
+    transition: all .5s ease;
+}
+.miDiv {
+    width: 750px; /* Ancho del div */
+    height: 500px; /* Altura del div */
+    position: relative; /* Si es necesario */
+}
+.miDiv img {
+    width: 100%; /* Ancho de la imagen al 100% del div */
+    height: 100%; /* Altura de la imagen al 100% del div */
+    object-fit: cover; /* Ajustar la imagen para cubrir el contenido del div */
+}
+.contenedor{
+    margin-top: 300px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.button-reserva{
+    position:relative;
+    width: 30%;
+    height: 50px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 1rem;
+    transition: all .5s ease;
+    font-weight: bold;
+}
+.button-reserva:hover{
+    background-color: #00C3FF;
+}
+#fecha {
+    width: 200px; /* Ancho del input */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde */
+    font-size: 16px; /* Tamaño de la fuente */
+    outline: none; /* Quita el resplandor al hacer clic */
+}
+
+/* Estilo para el placeholder */
+::placeholder {
+    color: #999; /* Color del texto del placeholder */
+}
